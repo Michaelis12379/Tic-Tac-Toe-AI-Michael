@@ -124,6 +124,15 @@ class RandomAI:
                 possibleMoves.append(i)
         return (random.choice(possibleMoves))
 
+#My class AI
+class MichaelAI:
+    def determine_move(self, game)
+        availablemoves = []
+        for i in range(10)
+            if game.is_valid_move(i)
+            availablemoves.append(i)
+        return()
+
 
 if __name__ == "__main__":
     # Here you can decide how to initialize players
@@ -136,7 +145,7 @@ if __name__ == "__main__":
     # For students' AI competition:
     player1 = HumanPlayer('X')
     #player2 = HumanPlayer('X')
-    player2 = AIPlayer('O', SimpleAI())  # Replace with student AI implementation - name function with your name ie: "Jim-AI"
+    player2 = AIPlayer('O', MichaelAI())  # Replace with student AI implementation - name function with your name ie: "Jim-AI"
     #player2 = AIPlayer('X', RandomAI())  # Replace with another student AI implementation or the same for testing ie: "Mary-AI"
     game = TicTacToe(player1, player2)
     game.play()
